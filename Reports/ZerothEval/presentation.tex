@@ -1,0 +1,178 @@
+\documentclass{beamer}
+
+\mode<presentation> {
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+%\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Estimation of Nutritional Value of Food]{Estimation of Nutritional Value of Food in Real Time Using Deep Learning} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author [Team No. 17]  
+{Akshay \textbf{(69)} Jithinraj \textbf{(30)}  Midhun \textbf{(37)}  Jishnu \textbf{(70)}} % Your name
+\institute[Dept. of CSE, GCEK] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+Guided by: \textbf{Prof. Shine S}  
+\bigskip
+\\S7 CSE (2016 Batch)\\ % Your institution for the title page
+}
+\date{\today} % Date, can be changed to a custom date
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+\begin{frame}
+\frametitle{Outline} % Table of contents slide, comment this block out to remove it
+\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+\end{frame}
+
+%	PRESENTATION SLIDES
+%------------------------------------------------
+\section{Introduction} 
+
+%\subsection{} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
+\begin{frame}
+\frametitle{Introduction}
+\begin{itemize}
+    \item High Calorie food intake can be harmful and result in obesity,
+which is a preventable medical condition that causes abnormal accumulation of fat in the body.
+    \item  It can result in numerous diseases such as diabetes, cholesterol, heart attacks,blood pressure and other diet related diseases.
+\item Method helps in determining the nutritional content of food automatically by making it feasible for a person to learn about what food might contain and how healthy it might be.
+\item The inherent theme is to automatically detect food items from an image of a platter and then estimate the respective food attributes such as the percentage of calcium, iron etc.
+\end{itemize}
+\end{frame}
+
+\section{Motivation}
+\begin{frame}
+\frametitle{Motivation}
+\begin{itemize}
+    \item Rapid increase in dietary diseases such as cholesterol, blood pressure, strokes etc during the last few decades caused by unhealthy food routine.
+    \item If people become more aware about their food intake and its nutritional value, then the diseases mentioned above and allergies can be reduced.
+\end{itemize}
+\end{frame}
+
+\section{Literature Review}
+\begin{frame}
+\frametitle{Literature Review}
+\begin{itemize}
+    \item Ege and Yanai proposed a system that directly estimate food calories from photos of food by simultaneously learning about food categories and ingredients.\cite{a2}
+    \item Pouladzadeh proposed a system that involves capturing an image of the food and processing it through predefined steps, which follow a pipe line architecture.\cite{a3}
+\end{itemize}
+\end{frame}
+
+
+\section{Objectives}
+\begin{frame}
+\frametitle{Objectives}
+\begin{itemize}
+    \item Use CNNs to recognize the food item in an image.
+    \item Estimates food attributes using text retrieval from internet archives as well as scrapping of data from nutritional and recipe websites for ingredients and nutrient counts.
+    \item Data is trained on a two layer neural network, from which we can compute probabilities of existing ingredients in a particular food item.
+\end{itemize}
+\end{frame}
+
+\section{Relevance and Impact on Society}
+\begin{frame}
+\frametitle{Relevance and Impact on Society}
+\begin{itemize}
+    \item Diet management can made easy.
+    \item Diseases such as high cholesterol, blood pressure, strokes etc which caused by unhealthy food routine can be reduced.
+\end{itemize}
+\end{frame}
+
+
+\section{Conclusions}
+\begin{frame}
+\frametitle{Conclusions}
+\begin{itemize}
+    \item We proposed a system to provide health information about the food we eat.
+    \item Estimate approximate ingredients and nutritional values in food.
+    \item Can record real time images of food and analyze it for nutritional content, so that people can improve their dietary habits and lead a healthy life.
+\end{itemize}
+\end{frame}
+
+%\begin{frame}
+%\frametitle{References}
+%\footnotesize{
+%\begin{thebibliography}{99} % Beamer does not support %BibTeX so references must be inserted manually as below
+%\bibitem[Smith, 2012]{p1} John Smith (2012)
+%\newblock Title of the publication
+%\newblock \emph{Journal Name} 12(3), 45 -- 678.
+%\end{thebibliography}
+%}
+%\end{frame}
+
+\begin{frame}[allowframebreaks] %allow to expand references to multiple frames (slides)
+
+\frametitle{References}
+
+\scriptsize{\bibliographystyle{plain}}
+
+\bibliography{ref} %bibtex file name without .bib extension
+\nocite{*}
+\end{frame}
+
+\begin{frame}
+\Huge{\centerline{Thank You}}
+\end{frame}
+
+\end{document} 
