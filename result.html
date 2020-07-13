@@ -1,0 +1,17 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+   	 
+   	 <div class="col-md-4 col-lg-offset-4">
+        	{%  print(result)  %}
+   		 	<h1 style="color:green;">The image uploaded has a cactus plant</h1>
+   		{%  print(result)  %}
+   			 <h1 style="color:red;">The image uploaded does not have a cactus plant</h1>
+   	 </div>
+   	 
+   	 <div class="col-md-4 col-lg-offset-4">
+   		 <img src="data:image/jpg;base64, {{encoded_photo | safe}}" width="50%">
+   	 </div>
+    
+{% endblock %}
